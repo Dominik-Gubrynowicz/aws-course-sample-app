@@ -1,0 +1,14 @@
+{
+  "name": "aws-entry-course-app",
+  "version": "1.0.0",
+  "description": "Basic app for demonstration purposes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dominik Gubrynowicz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
