@@ -12,7 +12,8 @@ Docker install helper script
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh ./get-docker.sh --dry-run
+sudo sh ./get-docker.sh
+sudo usermod -aG docker $USER
 ```
 
 ### 1.2 Build image
