@@ -27,3 +27,13 @@ docker build -t sample-app:0.1 .
 ```
 docker run -p 80:80 -d sample-app:0.1
 ```
+
+## Other useful commands
+
+AWS CLI installation
+
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
