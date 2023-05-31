@@ -4,8 +4,6 @@ This is a sample app for demonstration purposes
 
 ## Docker lab
 
----
-
 ### 1.1 Install docker on EC2
 
 Start with installing docker on your EC2 machine
