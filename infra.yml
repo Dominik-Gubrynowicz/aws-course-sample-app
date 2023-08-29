@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  ImageIdParameter:
+    Type: String
+    Description: AMI id to be used for instance
+  InstanceTypeParameter:
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - m1.small
+      - m1.large
+    Description: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
+  SubnetIdParameter:
+    Type: String
+    Description: ID of the subnet where instance should be deployed
+  SecurityGroupIdParameter:
+    Type: String
+    Description: ID of the security group to be used with EC2
+  KeyNameParameter:
+    Type: String
+    Description: Name of the key to be used with EC2
+
+Resources:
+  MyNewEC2Instance:
+    Type: AWS::EC2::Instance  
+    Properties: 
+      ImageId: !Ref ImageIdParameter
+      InstanceType: !Ref InstanceTypeParameter
+      SubnetId: !Ref SubnetIdParameter
+      SecurityGroupIds: 
+        - !Ref SecurityGroupIdParameter
+      KeyName: !Ref KeyNameParameter
